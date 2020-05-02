@@ -13,7 +13,7 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     android:weightSum="1"
-    tools:context="com.example.yo7a.healthwatcher.Primary">
+    tools:context="com.example.sO2.Primary">
 
 
     <ImageView
@@ -27,13 +27,6 @@
         android:layout_height="10dp" />
 
     <ImageButton
-        android:id="@+id/HR"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:background="@android:color/transparent"
-        app:srcCompat="@mipmap/hr1" />
-
-    <ImageButton
         android:id="@+id/RR"
         android:layout_width="wrap_content"
         android:layout_height="75dp"
@@ -41,25 +34,11 @@
         app:srcCompat="@mipmap/rr1" />
 
     <ImageButton
-        android:id="@+id/BP"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:background="@android:color/transparent"
-        app:srcCompat="@mipmap/bp1" />
-
-    <ImageButton
         android:id="@+id/O2"
         android:layout_width="wrap_content"
         android:layout_height="75dp"
         android:background="@android:color/transparent"
         app:srcCompat="@mipmap/or1" />
-
-    <ImageButton
-        android:id="@+id/VS"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:background="@android:color/transparent"
-        app:srcCompat="@mipmap/avs" />
 
     <ImageButton
         android:id="@+id/About"

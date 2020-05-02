@@ -11,7 +11,7 @@
     android:paddingRight="64dp"
     android:paddingBottom="16dp"
     android:weightSum="1"
-    tools:context="com.example.yo7a.healthwatcher.RespirationProcess">
+    tools:context="com.example.sO2.RespirationProcess">
 
     <SurfaceView
         android:id="@+id/preview"
@@ -30,5 +30,13 @@
         android:max="26"
         android:progress="1"
         android:progressDrawable="@drawable/circular_progressbar" />
+
+    <TextView
+        android:id="@+id/textViewRR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textColor="#120a8f" />
 
 </LinearLayout>

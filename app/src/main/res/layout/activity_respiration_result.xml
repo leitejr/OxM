@@ -13,7 +13,7 @@
     android:paddingRight="64dp"
     android:paddingBottom="16dp"
     android:weightSum="1"
-    tools:context="com.example.yo7a.healthwatcher.RespirationResult">
+    tools:context="com.example.sO2.RespirationResult">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -41,14 +41,5 @@
         android:layout_height="70dp"
         android:layout_marginBottom="140dp"
         app:srcCompat="@mipmap/rrr" />
-
-    <ImageButton
-        android:id="@+id/SendRR"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginBottom="40dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:srcCompat="@mipmap/send" />
 
 </LinearLayout>

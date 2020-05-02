@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">HealthWatcher</string>
-    <string name="msg">Please enable all permission</string>
+    <string name="app_name">Estimador de sO2</string>
+    <string name="msg">Habilite todas as permissões (Please enable all permissions)</string>
 
     <string-array name="Gender">
         <item>Male</item>
         <item>Female</item>
-
     </string-array>
 
 </resources>

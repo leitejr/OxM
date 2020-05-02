@@ -13,7 +13,7 @@
     android:paddingRight="64dp"
     android:paddingBottom="16dp"
     android:weightSum="1"
-    tools:context="com.example.yo7a.healthwatcher.AboutApp">
+    tools:context="com.example.sO2.AboutApp">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -42,14 +42,13 @@
         android:layout_marginBottom="140dp"
         app:srcCompat="@mipmap/ro2" />
 
-    <ImageButton
-        android:id="@+id/SendO2"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginBottom="40dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        app:srcCompat="@mipmap/send" />
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Sobre" />
 
 </LinearLayout>
 

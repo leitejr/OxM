@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidStudioApps-HealthWatcher.iml" filepath="$PROJECT_DIR$/AndroidStudioApps-HealthWatcher.iml" group="HealthWatcher" />
       <module fileurl="file://$PROJECT_DIR$/HealthWatcher.iml" filepath="$PROJECT_DIR$/HealthWatcher.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/HealthWatcher-app.iml" filepath="$PROJECT_DIR$/app/HealthWatcher-app.iml" group="HealthWatcher/app" />
+      <module fileurl="file://$PROJECT_DIR$/OxM.iml" filepath="$PROJECT_DIR$/OxM.iml" group="OxM" />
+      <module fileurl="file://$PROJECT_DIR$/app/OxM-app.iml" filepath="$PROJECT_DIR$/app/OxM-app.iml" group="OxM/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/OxM-app2.iml" filepath="$PROJECT_DIR$/app/OxM-app2.iml" group="HealthWatcher/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

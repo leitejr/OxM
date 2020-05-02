@@ -10,12 +10,22 @@
     android:paddingTop="16dp"
     android:paddingRight="64dp"
     android:paddingBottom="16dp"
-    tools:context="com.example.yo7a.healthwatcher.O2Process">
+    tools:context="com.example.sO2.O2Process">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Estimador da Saturação de Oxigênio (%)"
+        android:textColor="#120a8f"
+        android:textSize="30sp" />
 
     <SurfaceView
         android:id="@+id/preview"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
         android:layout_weight="1" />
 
     <ProgressBar
@@ -29,5 +39,14 @@
         android:max="26"
         android:progress="1"
         android:progressDrawable="@drawable/circular_progressbar" />
+
+    <TextView
+        android:id="@+id/textViewO2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mantenha o indicador por 30 seg na c\u00e2mera sem movimentar!"
+        android:textAllCaps="false"
+        android:textColor="#120a8f"
+        android:textSize="24sp" />
 
 </LinearLayout>

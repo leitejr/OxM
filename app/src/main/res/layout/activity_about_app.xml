@@ -13,7 +13,7 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     android:weightSum="1"
-    tools:context="com.example.yo7a.healthwatcher.AboutApp">
+    tools:context="com.example.sO2.AboutApp">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -28,8 +28,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="89dp"
-        android:fontFamily="cursive"
-        android:text="This Application was made as a graduation project at Princess Sumaya university for Technology by \n Yahya Odeh and Talal Kudmani"
+        android:fontFamily="casual"
+        android:text="Adaptado pelo IFBA de YahyaOdeh/HealthWatcher e método de Kanva et al.(2014) - Referência: https://ieeexplore.ieee.org/abstract/document/6959086."
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
