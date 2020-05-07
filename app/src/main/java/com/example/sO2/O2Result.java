@@ -33,7 +33,7 @@ public class O2Result extends AppCompatActivity {
         if (bundle != null) {
             O2 = bundle.getInt("O2R");
             user = bundle.getString("Usr");
-            RO2.setText(String.valueOf(O2));
+            RO2.setText(String.valueOf(O2)+" %");
         }
 
         Button Abt = this.findViewById(R.id.button);

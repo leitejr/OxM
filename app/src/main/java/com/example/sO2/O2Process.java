@@ -1,9 +1,11 @@
 package com.example.sO2;
 
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.hardware.Camera;
 import android.hardware.Camera.PreviewCallback;
@@ -19,6 +21,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.example.sO2.Math.Fft;
 
@@ -88,9 +92,56 @@ public class O2Process extends Activity {
         ProgO2 = findViewById(R.id.O2PB);
         ProgO2.setProgress(0);
 
+
+        // Here, thisActivity is the current activity
+        if (ContextCompat.checkSelfPermission(O2Process.this,
+                Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Permission is not granted
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(O2Process.this,
+                    Manifest.permission.CAMERA)) {
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+            } else {
+                // No explanation needed; request the permission
+                ActivityCompat.requestPermissions(O2Process.this,
+                        new String[]{Manifest.permission.CAMERA},
+                        1);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        } else {
+            // Permission has already been granted
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
         // WakeLock Initialization : Forces the phone to stay On
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK, "DoNotDimScreen");
+
+
+
+
+
+
+
+
     }
 
     //Prevent the system from restarting your activity during certain configuration changes,
@@ -212,7 +263,7 @@ public class O2Process extends Activity {
                     inc = 0;
                     ProgP = inc;
                     ProgO2.setProgress(ProgP);
-                    mainToast = Toast.makeText(getApplicationContext(), "Measurement Failed", Toast.LENGTH_SHORT);
+                    mainToast = Toast.makeText(getApplicationContext(), "FALHA", Toast.LENGTH_SHORT);
                     mainToast.show();
                     startTime = System.currentTimeMillis();
                     counter = 0;

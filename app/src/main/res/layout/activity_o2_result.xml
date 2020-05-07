@@ -14,6 +14,13 @@
     android:paddingBottom="16dp"
     android:weightSum="1"
     tools:context="com.example.sO2.AboutApp">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo"
+        android:layout_marginBottom="140dp"
+        />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -32,23 +39,26 @@
         android:background="@android:color/transparent"
         android:text=""
         android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:textSize="36sp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="100dp"
         app:srcCompat="@mipmap/ro2" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:fontFamily="monospace"
-        android:text="Sobre" />
+        android:text="Sobre"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        />
 
 </LinearLayout>
 
